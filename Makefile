@@ -11,6 +11,7 @@ endif
 
 .PHONY: all left clean_firmware clean_image clean
 
+
 all:
 	$(shell bin/get_version.sh >> /dev/null)
 	$(DOCKER) build --tag zmk --file Dockerfile .
